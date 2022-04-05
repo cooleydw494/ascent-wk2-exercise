@@ -6,8 +6,11 @@ console.log(`Your role is ${role}.`);
 
 const stdlib = loadStdlib(process.env);
 console.log(`The consensus network is ${stdlib.connector}.`);
-console.log(`The standard until is ${stdlib.standardUnit}`);
-console.log(`The atomic unit is ${stdlib.atomicUnit}`);
+
+const suStr = stdlib.standardUnit;
+const auStr = stdlib.atomicUnit;
+console.log(`The standard until is ${suStr}`);
+console.log(`The atomic unit is ${auStr}`);
 
 (async () => {
   const commonInteract = {};
