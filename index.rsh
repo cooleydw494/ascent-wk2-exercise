@@ -1,6 +1,6 @@
 'reach 0.1';
 
-const commonInteract - {};
+const commonInteract = {};
 const sellerInteract = { ...commonInteract };
 const buyerInteract = { ...commonInteract };
 

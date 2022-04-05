@@ -2,10 +2,12 @@ import { loadStdlib } from '@reach-sh/stdlib';
 import * as backend from './build/index.main.mjs';
 
 const role = 'seller';
-consle.log(`Your role is ${role}.`);
+console.log(`Your role is ${role}.`);
 
 const stdlib = loadStdlib(process.env);
 console.log(`The consensus network is ${stdlib.connector}.`);
+console.log(`The standard until is ${stdlib.standardUnit}`);
+console.log(`The atomic unit is ${stdlib.atomicUnit}`);
 
 (async () => {
   const commonInteract = {};
